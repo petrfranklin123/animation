@@ -1,0 +1,151 @@
+*{padding:0;margin:0;border:0;}
+ul li{list-style:none;}
+.text{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.text__1{
+    animation-name: anim-1;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+@keyframes anim-1{
+    0%{
+        transform: translateX(100px);
+        opacity: 0; 
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+.text__2{
+    animation-name: anim-2;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+@keyframes anim-2{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(3);
+    }
+}
+@keyframes anim-3{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0; 
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.conteiner{
+    max-width: 930px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+   background-color: rgb(99, 0, 0);
+  /* background-image: url(../img/ussr.png);
+   background-repeat: no-repeat;
+   background-size: 200px 200px;*/
+}
+.header__top ul{
+    display: flex;
+}
+.header__top li{
+    margin-top: 30px;
+    margin-left: 40px;
+    color: blanchedalmond;
+    font-size: 24px;
+}
+.one{
+    animation-name: size;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    /*animation-delay: 0s;*/
+}
+.two{
+    animation-name: size;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    /*animation-delay: 1s;*/
+}
+.three{
+    animation-name: size;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    /*animation-delay: 2s;*/
+}
+.header__mid{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: flex-end;
+}
+.header__mid__image{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/ussr.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    animation-name: anim-1;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+.header__mid__text{
+    width: 730px;
+    padding: 10px;
+    color: blanchedalmond;
+    font-size: 19px;
+    animation-name: anim-3;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    
+}
+.header__mid__text h1{
+    text-align: center;
+}
+/*.header__mid__image:hover{
+    animation-name: size;
+    animation-duration: 1s;
+}*/
+@keyframes size{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.bodys{
+    width: 100%;
+    height: 900px;
+    background-color: cornsilk;
+    background-image: url(../img/2.png);
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.column{
+    width: 30%;
+    height: 200px;
+    background-color: burlywood;
+    border: crimson 1px solid;
+    animation-name: anim-1;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
